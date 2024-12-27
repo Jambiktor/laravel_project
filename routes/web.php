@@ -4,8 +4,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
 Route::middleware("auth")->group(function () {
-    Route::view("/", 'welcome')->name("home");
+    Route::get('/', function () {
+        $email = Auth::user()->email;  // Retrieve the authenticated user's email
+        return view('welcome', ['email' => $email]);
+    })->name("home");
 });
+
 
 Route::get("/login", [AuthController::class, "login"])
  ->name("login");

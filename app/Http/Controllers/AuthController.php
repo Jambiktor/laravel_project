@@ -23,7 +23,9 @@ class AuthController extends Controller
 
         if(Auth::attempt($credentials))
         {
-            return redirect()->intended(route("home"));
+            $user = Auth::user();
+            $email = $user->email;
+            return redirect()->intended(route("home",  ['email' => $email]));
         }
         return redirect(route("login"))->with( "error", " Failed to login");
     }
