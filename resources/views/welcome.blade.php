@@ -108,7 +108,6 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light  mb-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Employee Dashboard</a>
@@ -129,10 +128,8 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <div class="container-fluid mt-5">
         <div class="row">
-            <!-- Dashboard Cards -->
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body text-center">
@@ -154,7 +151,6 @@
             </div>
         </div>
 
-        <!-- Time In and Time Out Section -->
         <div class="time-section mt-4">
             <h3 class="text-center">Work Hours</h3>
             <div class="d-flex justify-content-center">
@@ -166,8 +162,6 @@
         </div>
     </div>
 
-
-    <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
